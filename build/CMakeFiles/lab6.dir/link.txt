@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -std=c++14   CMakeFiles/lab6.dir/lab6.cpp.o CMakeFiles/lab6.dir/PrecondViolatedExcep.cpp.o CMakeFiles/lab6.dir/Rational.cpp.o  -o lab6 -rdynamic 

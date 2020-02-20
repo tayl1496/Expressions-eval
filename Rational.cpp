@@ -201,6 +201,17 @@ const Rational operator/(const Rational& lhs,
    return quo;
 }
 
+std::ostream& operator<<(std::ostream& s,
+			 const Rational& rhs) {
+  char slash = '/';
+  
+  s << rhs.numerator
+    << slash
+    << rhs.denominator;
+
+  return s;
+}
+
 std::istream& operator>>(std::istream& s,
                          Rational& rhs) {
 
@@ -208,7 +219,7 @@ std::istream& operator>>(std::istream& s,
 
    s >> rhs.numerator
      >> dummy
-     >> rhs. denominator;
+     >> rhs.denominator;
 
    rhs.lowTerms();
 

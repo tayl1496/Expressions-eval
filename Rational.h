@@ -66,7 +66,7 @@ public:
       std::ostream object on the left-hand side and a Rational on the
       right-hand side. */
    friend std::ostream& operator<<(std::ostream&,
-                                   const Rational&);
+                                   const Rational&); //needs to be implimented
 
    /* Binary non-member operator acting on two arguments: an
       std::istream object on the left-hand side and a Rational on the
